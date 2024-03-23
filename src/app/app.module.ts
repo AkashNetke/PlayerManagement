@@ -3,14 +3,28 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NavbarComponent } from './component/navbar/navbar.component';
+import { CreateplayerComponent } from './component/createplayer/createplayer.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { PlayerlistComponent } from './component/playerlist/playerlist.component';
+import { PlayerdetailsComponent } from './playerdetails/playerdetails.component';
+import { UpdateplayerComponent } from './component/updateplayer/updateplayer.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavbarComponent,
+    CreateplayerComponent,
+    PlayerlistComponent,
+    PlayerdetailsComponent,
+    UpdateplayerComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
